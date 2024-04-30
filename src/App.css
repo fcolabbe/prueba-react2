@@ -1,0 +1,92 @@
+.link-activo {
+  color: #ffcc01;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.link-inactivo {
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav-logo {
+  background-color: #28a2b8 ;
+}
+
+.banner-header {
+  background-image: url('/portada-pizza.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  height: 200px;
+  filter: brightness(55%);
+}
+
+.banner-header h1 {
+  font-size: 3em;
+  padding-top: 50px;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 40px;
+}
+
+.detalle-pizza{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #28a2b8;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #28a2b8;
+  width: 80%;
+  margin: 0 auto; /* Add this line to center the div */
+  margin-top: 30px;
+}
+
+.detalle-carro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #28a2b8;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #28a2b8;
+  width: 80%;
+  margin: 0 auto; /* Add this line to center the div */
+  margin-top: 30px;
+}
+
+.add-pizza {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.producto {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
