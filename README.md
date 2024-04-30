@@ -31,36 +31,7 @@ La aplicación web Mamma Mia! es una SPA (Single Page Application) que muestra e
 4. Inicia la aplicación: `npm run dev`
 5. Abre tu navegador web y visita `http://localhost:5173` para ver la aplicación en funcionamiento.
 
-## Estructura del proyecto
+## Screenshots del proyecto
 
-```
-mamma-mia-pizzeria/
-├── node_modules/
-├── public/
-│   ├── index.html
-│   ├── favicon.ico
-│   └── ...
-├── src/
-│   ├── components/
-│   │   ├── CartItem.jsx
-│   │   ├── PizzaCard.jsx
-│   │   ├── PizzaDetails.jsx
-│   │   └── ...
-│   ├── contexts/
-│   │   └── CartContext.jsx
-│   ├── pages/
-│   │   ├── Cart.jsx
-│   │   ├── Home.jsx
-│   │   ├── PizzaDetails.jsx
-│   │   └── ...
-│   ├── data/
-│   │   └── pizzas.json
-│   ├── App.jsx
-│   ├── main.jsx
-│   ├── index.css
-│   └── ...
-├── .gitignore
-├── package.json
-├── vite.config.js
-└── README.md
-```
+![Screenshot](<public/Screenshot 2024-04-29 at 22.12.04.png>)
+
