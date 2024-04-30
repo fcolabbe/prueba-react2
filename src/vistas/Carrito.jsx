@@ -11,7 +11,7 @@ const Carrito = () => {
           <img src={pizza.img} alt={pizza.name}></img>
           <div className="order-info">
             <h3>{pizza.name}</h3>
-            <p>{pizza.price}</p>
+            <p>$ {pizza.price}</p>
             <div className="quantity-controls">
               <button className="minus" onClick={() => eliminarDelCarro(pizza)}>-</button>
               <span className="quantity">{pizza.cantidad}</span>
