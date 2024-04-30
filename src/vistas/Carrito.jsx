@@ -22,7 +22,7 @@ const Carrito = () => {
       ))}
       <div className="total">
         <h3>${total}</h3>
-        <button className="pay-btn">Ir a Pagar</button>
+        <button className="pay-btn" onClick={() => alert('Compra exitosa !!! :)')}>Ir a Pagar</button>
       </div>
     </div>
   )
