@@ -2,7 +2,7 @@ import MiContexto from "../contexto/MiContexto"
 import { useContext } from "react"
 
 const Carrito = () => {
-  const { carro, setCarro, setTotal, total, agregarAlCarro, eliminarDelCarro } = useContext(MiContexto)
+  const { carro, total, agregarAlCarro, eliminarDelCarro } = useContext(MiContexto)
   return (
     <div className="order-details">
       <h2>Detalles del pedido:</h2>

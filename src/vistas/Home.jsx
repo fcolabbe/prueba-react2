@@ -6,7 +6,7 @@ import Banner from '../components/Banner'
 import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
-    const { pizzas, carro, setCarro, setTotal, total, agregarAlCarro } = useContext(MiContexto)
+    const { pizzas, agregarAlCarro } = useContext(MiContexto)
     const navigate = useNavigate()
     const verDetalle = (pizza) => {
         //console.log(id)
