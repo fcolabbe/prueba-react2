@@ -19,11 +19,18 @@ function App() {
     setPizzas(data);
   };
 
+  const agregarAlCarro = (pizza) => {
+    setCarro([...carro, pizza])
+    setTotal(total + pizza.price)
+/*         console.log(pizza.price)
+    console.log(total) */
+}
+
   useEffect(() => {
     getPizzas();
   }, []);
 
-  const sharedData = { pizzas, setPizzas, carro, setCarro, total, setTotal};
+  const sharedData = { pizzas, setPizzas, carro, setCarro, total, setTotal, agregarAlCarro };
   return (
     <div>
       <MiContexto.Provider value={sharedData}>  

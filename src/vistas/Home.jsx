@@ -6,18 +6,13 @@ import Banner from '../components/Banner'
 import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
-    const { pizzas, carro, setCarro, setTotal, total } = useContext(MiContexto)
+    const { pizzas, carro, setCarro, setTotal, total, agregarAlCarro } = useContext(MiContexto)
     const navigate = useNavigate()
     const verDetalle = (pizza) => {
         //console.log(id)
         navigate(`/pizza/${pizza.id}`)
     }
-    const agregarAlCarro = (pizza) => {
-        setCarro([...carro, pizza])
-        setTotal(total + pizza.price)
-/*         console.log(pizza.price)
-        console.log(total) */
-    }
+ 
 return (
     <>
         <Banner />

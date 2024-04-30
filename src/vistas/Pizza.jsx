@@ -6,7 +6,7 @@ import { useContext, useEffect, useState } from "react"
 const Pizza = () => {
     const [pizza, setPizza] = useState({})
     const { id } = useParams();
-    const { pizzas } = useContext(MiContexto)
+    const { pizzas, agregarAlCarro } = useContext(MiContexto)
 
     const buscarPizzaPorId = (id) => {
         const p =  pizzas.find((pizza) => pizza.id === id)
@@ -34,7 +34,7 @@ const Pizza = () => {
             </ul>
             <div className="add-pizza">
             <h3>Precio: $ {pizza.price}</h3>
-            <button className="btn btn-danger">Añadir <img src="/carro_color.png" alt="logo" height="25" className="d-inline-block align-top" /></button>
+            <button className="btn btn-danger" onClick={() => agregarAlCarro(pizza)}>Añadir <img src="/carro_color.png" alt="logo" height="25" className="d-inline-block align-top" /></button>
             </div>
 
         </div>
